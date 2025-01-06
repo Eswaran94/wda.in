@@ -12,7 +12,7 @@ body, html {
 /* Header Section */
 header {
   position: relative;
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -32,13 +32,13 @@ header {
   z-index: 1;
 }
 
-.overlay {
+.overlay h1 {
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /* Adjusted shadow opacity for better readability */
@@ -46,6 +46,26 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.overlay h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /* Adjusted shadow opacity for better readability */
+  z-index: 2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.sub-headline {
+  font-size: 1.8rem;
+  
+  font-weight: bold;
+}
 
 .logo {
   position: absolute;
@@ -60,6 +80,7 @@ header {
 
 .logo img {
   width: 100px;
+  margin-top: 5%;
   transition: transform 0.3s ease;
 }
 
@@ -191,11 +212,26 @@ footer {
 
 @media screen and (max-width: 768px) {
   .overlay h1 {
-    font-size: 1.0rem;
+    font-size: 0.7rem;
+  }
+
+  .overlay h2 {
+    font-size: 0.5rem;
   }
 
   .overlay {
     font-size: 1.0rem;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.7;
+    z-index: 3;
+    background: rgba(0, 0, 0, 10.5);
+    padding: 5px;
+    border-radius: 4px;
   }
 
   .logo img {
@@ -206,7 +242,18 @@ footer {
     top: 10px;
     right: 10px;
     flex-direction: column;
-    gap: 10px;}
+    gap: 10px;
+  }
+
+  .nav-buttons button {
+      padding: 6px 6px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+   }  
     
 
   .service-cards {
@@ -235,18 +282,46 @@ footer {
 
 @media screen and (max-width: 480px) {
   .overlay h1 {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
+
+  .overlay h2 {
+    font-size: 0.5rem;
+    margin-top: -5%;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.7;
+    z-index: 3;
+    background: rgba(0, 0, 0, 10.5);
+    padding: 5px;
+    border-radius: 4px;}
+
 
   .logo img {
     width: 50px;
+    margin-top: 10%;
+  }
+
+  .nav-buttons {
+    top: 10px;
+    right: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .nav-buttons button {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-    
-  }
+      padding: 6px 6px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+   }  
 
   .card {
     width: 90%;
@@ -279,7 +354,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 0.9rem;
 }
 
@@ -439,7 +514,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 0.9rem;}
 
 .footer-content {
