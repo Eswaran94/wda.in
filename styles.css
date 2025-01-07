@@ -439,6 +439,7 @@ footer {
     align-items: center;
     margin-left: 3%;
     margin-right: 2%;
+    max-width: 300px;
   }
 
   .left-r, .right {
