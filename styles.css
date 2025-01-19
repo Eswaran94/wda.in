@@ -258,6 +258,7 @@ footer {
 
   .service-cards {
     flex-direction: column;
+    margin-left: 4.5%;
   }
 
   section h2 {
@@ -363,7 +364,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   width: 85%;
   margin-left: 15%;
   margin-bottom: 2%;
@@ -438,8 +439,8 @@ footer {
     flex-direction: column; /* Stack sections vertically on smaller screens */
     align-items: center;
     margin-left: 3%;
-    margin-right: 2%;
-    max-width: 300px;
+    margin-right: 3%;
+    max-width: 310px;
   }
 
   .left-r, .right {
